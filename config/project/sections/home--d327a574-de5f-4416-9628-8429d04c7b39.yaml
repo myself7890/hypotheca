@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 86fd54e6-be77-4e40-88f0-8293b706e56c # Accueil
+handle: home
+maxAuthors: 1
+minAuthors: 1
+name: Accueil
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  cc056163-0f50-4378-b261-75a3339b2cc5: # Hypotheca
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single

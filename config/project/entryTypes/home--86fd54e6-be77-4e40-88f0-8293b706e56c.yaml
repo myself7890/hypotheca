@@ -1,0 +1,190 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  82ad3107-81af-47a4-82bf-3ad029dbd10f:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 007aa2a1-e2c6-454e-bc7e-995fd26e5f48
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d7d16ad9-3c66-48bc-9858-8c15b7652366 # Nom de la courtière
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b187c440-ba06-4d52-89bd-079eaf6e0c06
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 98aa0482-b8ee-4980-9e92-19c80f20f67f # Titre principal
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a87d20f-4e5f-4da1-9ead-ce753902814d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4f02a578-8baa-46c6-8bcf-85f90753a03c # Présentation
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 34abf8c1-d7b3-4d3e-8db9-3c61772cfb93
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 712ba338-4b81-42e7-9077-99fe66cd022d # Mention de permis
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69ac900e-8adc-4124-816f-fdac9156f093
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: edd2f856-b237-474e-8cdb-5059cf0869e4 # Texte d’introduction
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 670ebee5-9444-4e4d-aba1-9354c04c84f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 329b2dfa-d213-4f4e-ae87-0c8376c81cf4 # Libellé du bouton
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f7c90c0-89cd-44e2-8daa-ec3177fd998a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cfe0c80a-e4ee-4bc7-8ecb-21693ec7fe95 # Photo de la courtière
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3144b6d8-14cf-4ba3-b08b-0d1d9a01e203
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 741c6aab-5fe5-4a29-ad1b-6ec729f9b6fb # Blocs de contenu
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4bec8ef2-15ae-4ab7-af29-2410e1a1a8a2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: 3390705f-5fa1-481c-9158-c06c22e25820
+        userCondition: null
+    thumbFieldKey: null
+handle: home
+hasTitleField: true
+icon: null
+name: Accueil
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

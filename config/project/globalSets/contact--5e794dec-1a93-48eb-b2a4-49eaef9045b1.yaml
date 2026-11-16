@@ -1,0 +1,65 @@
+fieldLayouts:
+  73a17933-336c-423d-8496-f11fcda57066:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 73a48f37-9666-4792-87f6-1c3f47e8d82d # Nom de la courtière
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f54f9bb9-276a-4504-9e03-f3707ff6ab10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2ae091ad-67ef-4487-ba04-d2f117fa81cd # Téléphone
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96c47aa5-49f7-4254-b934-a7c51e56d947
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9213aefa-01ce-4012-bd70-344bc90a1652 # Courriel
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a726a92-c495-4e9e-9e69-16e159b445f9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: e9d95605-45f0-41e8-88b1-1f896683dc1b
+        userCondition: null
+    thumbFieldKey: null
+handle: contact
+name: Coordonnées
+sortOrder: 1

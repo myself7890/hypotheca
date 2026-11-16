@@ -1,0 +1,57 @@
+columnSuffix: null
+handle: imageTone
+instructions: null
+name: 'Couleur de fond de l’image'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Automatique (alternée)'
+        -
+          - value
+          - auto
+        -
+          - default
+          - true
+    -
+      __assoc__:
+        -
+          - label
+          - 'Bleu pâle'
+        -
+          - value
+          - sky
+        -
+          - default
+          - false
+    -
+      __assoc__:
+        -
+          - label
+          - 'Vert pâle'
+        -
+          - value
+          - sage
+        -
+          - default
+          - false
+    -
+      __assoc__:
+        -
+          - label
+          - Gris
+        -
+          - value
+          - mist
+        -
+          - default
+          - false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
+warning: null

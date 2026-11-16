@@ -1,0 +1,60 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  1bf40e49-9c47-49dd-9d9a-4d550c6be4d2:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 32605802-1d88-4426-8485-85f34ee3d95f # Citation
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79fd530f-4bc9-4d7b-a39e-b637176a54ef
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 971df287-e175-4858-ad23-08dfdd763ecd # Auteur
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d1b3d89-c9cb-4c8d-98e7-bb4d95f8e61e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: f5d83b7d-02bb-4f61-9fd6-42739917a200
+        userCondition: null
+    thumbFieldKey: null
+handle: quote
+hasTitleField: false
+icon: null
+name: Citation
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{quoteAuthor}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

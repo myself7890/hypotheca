@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: faqItems
+instructions: null
+name: Questions
+searchable: false
+settings:
+  addRowLabel: 'Ajouter une question'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Question
+            -
+              - handle
+              - question
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Réponse
+            -
+              - handle
+              - answer
+            -
+              - type
+              - multiline
+  maxRows: null
+  minRows: null
+  staticRows: false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
+warning: null

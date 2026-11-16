@@ -1,0 +1,16 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+/.ddev/admin-credentials.local
+/node_modules
+/web/dist
+/web/cpresources
+/storage/runtime
+/storage/logs
+/storage/backups
+/storage/config-backups
+/storage/composer-backups
+/storage/config-deltas
+/web/uploads
+/config/license.key.*

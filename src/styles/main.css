@@ -1,0 +1,48 @@
+:root {
+  --c-ink: #2d3a4d;
+  --c-teal: #41aec4;
+  --c-lime: #b0c80a;
+  --c-sky: #d9f0f6;
+  --c-sage: #ebf0cb;
+  --c-mist: #ececee;
+  --c-line: #e3e4e8;
+  --c-text: #3b3f47;
+  --font-title: 'Montserrat', system-ui, sans-serif;
+  --font-body: 'Open Sans', system-ui, sans-serif;
+  --font-script: 'Caveat', cursive;
+  --gutter: clamp(1.25rem, 5vw, 3.2rem);
+  --max: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--c-text);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+  font-weight: 800;
+  color: var(--c-ink);
+  margin: 0;
+  line-height: 1.1;
+}
+
+p { margin: 0; }
+a { color: inherit; }
+
+.container {
+  width: min(100% - 2 * var(--gutter), var(--max));
+  margin-inline: auto;
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}

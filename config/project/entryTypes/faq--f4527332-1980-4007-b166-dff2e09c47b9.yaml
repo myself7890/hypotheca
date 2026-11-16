@@ -1,0 +1,60 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  87c3d1ec-2581-4344-b3c3-fd58a508f928:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0ec5e2c0-bca9-40b3-8f1b-6a0a575cd0bb # Titre
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ffefa331-d193-48c6-89fc-0b3167403328
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 662f841a-1ea8-438b-b000-9edfc1da0d3d # Questions
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de3eea59-e172-414c-b272-d334ff9235d9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: 8e605eec-6035-4d11-b85c-f938e5c6e151
+        userCondition: null
+    thumbFieldKey: null
+handle: faq
+hasTitleField: false
+icon: null
+name: 'Foire aux questions'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{blockTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

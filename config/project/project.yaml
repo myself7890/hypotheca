@@ -1,0 +1,68 @@
+dateModified: 1794840183
+email:
+  fromEmail: admin@hypotheca.ddev.site
+  fromName: Hypotheca
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
+meta:
+  __names__:
+    0ec5e2c0-bca9-40b3-8f1b-6a0a575cd0bb: Titre # Titre
+    2ae091ad-67ef-4487-ba04-d2f117fa81cd: Téléphone # Téléphone
+    3f521a87-2d8f-4d31-8e7b-4f13ecc387a4: Texte # Texte
+    4f02a578-8baa-46c6-8bcf-85f90753a03c: Présentation # Présentation
+    5e794dec-1a93-48eb-b2a4-49eaef9045b1: Coordonnées # Coordonnées
+    8f2f18f7-e60f-4af3-99e0-0ab061612d19: Image # Image
+    9a0f4112-d0dd-4812-8ac1-2eccf65f7533: 'Couleur de fond de l’image' # Couleur de fond de l’image
+    21c2d62e-a26a-4e6b-af20-bf878240a929: Chiffres # Chiffres
+    73a48f37-9666-4792-87f6-1c3f47e8d82d: 'Nom de la courtière' # Nom de la courtière
+    86fd54e6-be77-4e40-88f0-8293b706e56c: Accueil # Accueil
+    98aa0482-b8ee-4980-9e92-19c80f20f67f: 'Titre principal' # Titre principal
+    99fc5c55-2830-446a-9213-3796a27d2f56: Étapes # Étapes
+    329b2dfa-d213-4f4e-ae87-0c8376c81cf4: 'Libellé du bouton' # Libellé du bouton
+    662f841a-1ea8-438b-b000-9edfc1da0d3d: Questions # Questions
+    712ba338-4b81-42e7-9077-99fe66cd022d: 'Mention de permis' # Mention de permis
+    741c6aab-5fe5-4a29-ad1b-6ec729f9b6fb: 'Blocs de contenu' # Blocs de contenu
+    971df287-e175-4858-ad23-08dfdd763ecd: Auteur # Auteur
+    9213aefa-01ce-4012-bd70-344bc90a1652: Courriel # Courriel
+    9934b111-3bda-413b-b440-4f3d8e2ad0c7: 'Lien du bouton' # Lien du bouton
+    32605802-1d88-4426-8485-85f34ee3d95f: Citation # Citation
+    ab9a2f29-79cd-4dd2-a081-bcf72fef4039: Étapes # Étapes
+    ac18bf3d-7f26-47b1-b4db-df6c09f6f8a2: 'Libellé du bouton' # Libellé du bouton
+    ad8c50ea-ed62-455e-95bd-0e98e0418ad7: Hypotheca # Hypotheca
+    b1854cb0-92a8-4b90-89a5-7fc376751f74: Images # Images
+    b48759a1-3115-4efe-a44a-61f80744e915: 'Position de l’image' # Position de l’image
+    bb98cc27-8386-4a8e-981a-8facfffe9338: 'Appel à l’action' # Appel à l’action
+    cc056163-0f50-4378-b261-75a3339b2cc5: Hypotheca # Hypotheca
+    cfe0c80a-e4ee-4bc7-8ecb-21693ec7fe95: 'Photo de la courtière' # Photo de la courtière
+    d7d16ad9-3c66-48bc-9858-8c15b7652366: 'Nom de la courtière' # Nom de la courtière
+    d7f140bb-46b4-4449-8b64-b6ebb902dab9: Citation # Citation
+    d327a574-de5f-4416-9628-8429d04c7b39: Accueil # Accueil
+    e292fb2c-1af6-4a8f-8ec9-99d6798ab887: 'Image + texte' # Image + texte
+    edd2f856-b237-474e-8cdb-5059cf0869e4: 'Texte d’introduction' # Texte d’introduction
+    f34f6c98-2cd0-4993-a950-e99ec109c061: 'Chiffres clés' # Chiffres clés
+    f4527332-1980-4007-b166-dff2e09c47b9: 'Foire aux questions' # Foire aux questions
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Hypotheca
+  schemaVersion: 5.12.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: stepItems
+instructions: null
+name: Étapes
+searchable: false
+settings:
+  addRowLabel: 'Ajouter une étape'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Titre
+            -
+              - handle
+              - title
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Description
+            -
+              - handle
+              - description
+            -
+              - type
+              - multiline
+  maxRows: null
+  minRows: null
+  staticRows: false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
+warning: null

@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: statItems
+instructions: null
+name: Chiffres
+searchable: false
+settings:
+  addRowLabel: 'Ajouter un chiffre'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Chiffre
+            -
+              - handle
+              - value
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Légende
+            -
+              - handle
+              - label
+            -
+              - type
+              - singleline
+  maxRows: null
+  minRows: null
+  staticRows: false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
+warning: null

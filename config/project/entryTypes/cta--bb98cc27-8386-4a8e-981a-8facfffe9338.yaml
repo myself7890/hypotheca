@@ -1,0 +1,94 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  33c26e41-7b56-4587-a127-5f5ba960027a:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0ec5e2c0-bca9-40b3-8f1b-6a0a575cd0bb # Titre
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13ce1522-97f3-4bb3-8d04-7e7c4858af10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3f521a87-2d8f-4d31-8e7b-4f13ecc387a4 # Texte
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b343d684-9b66-4575-9e94-6fc00963db1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ac18bf3d-7f26-47b1-b4db-df6c09f6f8a2 # Libellé du bouton
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 840ac1c9-2cee-41d2-989c-78ab8728ae66
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9934b111-3bda-413b-b440-4f3d8e2ad0c7 # Lien du bouton
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9e098ba-f701-4ab3-8894-d158390f923d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: df9e0f41-0222-4097-8123-f273dfc0dc5f
+        userCondition: null
+    thumbFieldKey: null
+handle: cta
+hasTitleField: false
+icon: null
+name: 'Appel à l’action'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{blockTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,0 +1,53 @@
+columnSuffix: null
+handle: contentBlocks
+instructions: 'Ajoutez, réorganisez et supprimez les blocs de la page.'
+name: 'Blocs de contenu'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - e292fb2c-1af6-4a8f-8ec9-99d6798ab887 # Image + texte
+    -
+      __assoc__:
+        -
+          - uid
+          - d7f140bb-46b4-4449-8b64-b6ebb902dab9 # Citation
+    -
+      __assoc__:
+        -
+          - uid
+          - f34f6c98-2cd0-4993-a950-e99ec109c061 # Chiffres clés
+    -
+      __assoc__:
+        -
+          - uid
+          - ab9a2f29-79cd-4dd2-a081-bcf72fef4039 # Étapes
+    -
+      __assoc__:
+        -
+          - uid
+          - f4527332-1980-4007-b166-dff2e09c47b9 # Foire aux questions
+    -
+      __assoc__:
+        -
+          - uid
+          - bb98cc27-8386-4a8e-981a-8facfffe9338 # Appel à l’action
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+tip: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
+warning: null

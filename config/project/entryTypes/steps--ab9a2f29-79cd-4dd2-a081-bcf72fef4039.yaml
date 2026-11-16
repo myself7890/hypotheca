@@ -1,0 +1,60 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  20151f76-c9d2-4c48-b8d6-cf6374a7b415:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0ec5e2c0-bca9-40b3-8f1b-6a0a575cd0bb # Titre
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b3c18a3-fc80-4ed6-8797-b514861dee2c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 99fc5c55-2830-446a-9213-3796a27d2f56 # Étapes
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: adf26860-f997-4eb9-a76a-829406d0feb0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: 22ee74e7-4e0e-48a1-b70d-2baa38f9cc08
+        userCondition: null
+    thumbFieldKey: null
+handle: steps
+hasTitleField: false
+icon: null
+name: Étapes
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{blockTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

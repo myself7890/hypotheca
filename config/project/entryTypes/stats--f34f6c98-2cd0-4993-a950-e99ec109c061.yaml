@@ -1,0 +1,60 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  b56c9456-5de5-4ca6-971b-f770e8cd5a3e:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0ec5e2c0-bca9-40b3-8f1b-6a0a575cd0bb # Titre
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bbd5a14a-f53f-403f-ba7c-edd0f8509778
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 21c2d62e-a26a-4e6b-af20-bf878240a929 # Chiffres
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e9912cc-fe76-487c-b399-ec844d6fd005
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: 2b36e368-61ee-44ac-a54c-780a95734e75
+        userCondition: null
+    thumbFieldKey: null
+handle: stats
+hasTitleField: false
+icon: null
+name: 'Chiffres clés'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{blockTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

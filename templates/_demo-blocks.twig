@@ -1,0 +1,18 @@
+{# Données d'exemple pour prévisualiser les types de blocs (dev seulement : /?demo=1). #}
+{{ [
+  { id: 9001, type: 'quote', text: 'Grâce à Prénom, nous avons obtenu un taux bien meilleur que celui de notre banque, sans aucun stress.', author: 'Marie T., Laval' },
+  { id: 9002, type: 'imageText', slug: 'exemple-droite', title: 'Image à droite', text: 'Un bloc image + texte, avec l’image placée à droite et une couleur de fond au choix.', position: 'right', tone: 'sage', image: null },
+  { id: 9003, type: 'stats', title: 'En quelques chiffres', items: [
+    { value: '15 ans', label: 'd’expérience' }, { value: '+1 200', label: 'familles accompagnées' }, { value: '30+', label: 'prêteurs comparés' }, { value: '0 $', label: 'de frais pour vous' }
+  ] },
+  { id: 9004, type: 'steps', title: 'Comment ça fonctionne', items: [
+    { title: 'Premier appel', description: 'On discute de votre projet et de vos besoins.' },
+    { title: 'Comparaison', description: 'Je compare les offres de plusieurs prêteurs.' },
+    { title: 'Signature', description: 'Je m’occupe du dossier jusqu’à la signature.' }
+  ] },
+  { id: 9005, type: 'faq', title: 'Questions fréquentes', items: [
+    { question: 'Est-ce vraiment gratuit?', answer: 'Oui. Ce sont les prêteurs qui rémunèrent la courtière.' },
+    { question: 'Combien de temps avant le renouvellement faut-il m’appeler?', answer: 'Idéalement de 4 à 6 mois avant l’échéance.' }
+  ] },
+  { id: 9006, type: 'cta', title: 'Prêt à commencer?', text: 'Remplissez la demande en ligne, c’est rapide et sans engagement.', label: 'Faire une demande en ligne', url: '/demande-en-ligne' }
+]|json_encode|raw }}
