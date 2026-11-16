@@ -29,6 +29,7 @@ const isCurrent = (href) => window.location.pathname === href;
 </template>
 
 <style scoped>
+.header { position: absolute; inset: 0 0 auto 0; z-index: 10; }
 .bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.25rem; }
 .nav { display: flex; align-items: center; gap: 1.75rem; }
 .link {

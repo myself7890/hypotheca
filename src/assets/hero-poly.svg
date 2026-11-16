@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <rect width="1600" height="900" fill="#eaf6f9"/>
+  <g stroke-width="1" stroke-linejoin="round">
+    <polygon points="0,0 520,0 380,380" fill="#ffffff" stroke="#ffffff"/>
+    <polygon points="0,0 380,380 0,300" fill="#d9f0f6" stroke="#d9f0f6"/>
+    <polygon points="520,0 1100,0 820,260" fill="#d9f0f6" stroke="#d9f0f6"/>
+    <polygon points="520,0 820,260 380,380" fill="#ebf0cb" stroke="#ebf0cb"/>
+    <polygon points="1100,0 1600,0 1250,330" fill="#9bd3e0" stroke="#9bd3e0"/>
+    <polygon points="1100,0 1250,330 820,260" fill="#41aec4" stroke="#41aec4"/>
+    <polygon points="1600,0 1600,240 1250,330" fill="#c9e86a" stroke="#c9e86a"/>
+    <polygon points="0,300 380,380 450,700 0,640" fill="#ececee" stroke="#ececee"/>
+    <polygon points="380,380 820,260 900,620 450,700" fill="#ffffff" stroke="#ffffff"/>
+    <polygon points="820,260 1250,330 900,620" fill="#7cc5d6" stroke="#7cc5d6"/>
+    <polygon points="1250,330 1600,240 1600,620 1300,700" fill="#b0c80a" fill-opacity=".55" stroke="#c4d84a" stroke-opacity=".55"/>
+    <polygon points="1250,330 1300,700 900,620" fill="#41aec4" fill-opacity=".8" stroke="#41aec4" stroke-opacity=".8"/>
+    <polygon points="0,640 450,700 600,900 0,900" fill="#ebf0cb" stroke="#ebf0cb"/>
+    <polygon points="450,700 900,620 1000,900 600,900" fill="#d9f0f6" stroke="#d9f0f6"/>
+    <polygon points="900,620 1300,700 1000,900" fill="#2d8fa6" fill-opacity=".85" stroke="#2d8fa6" stroke-opacity=".85"/>
+    <polygon points="1300,700 1600,620 1600,900 1000,900" fill="#9bd3e0" stroke="#9bd3e0"/>
+  </g>
+</svg>
