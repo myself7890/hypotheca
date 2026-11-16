@@ -1,7 +1,6 @@
 <script setup>
 import SiteHeader from '@/components/SiteHeader.vue';
 import HeroSection from '@/components/HeroSection.vue';
-import IntroSection from '@/components/IntroSection.vue';
 import BlockList from '@/components/BlockList.vue';
 import SiteFooter from '@/components/SiteFooter.vue';
 
@@ -11,12 +10,11 @@ defineProps({ page: { type: Object, required: true } });
 <template>
   <SiteHeader :nav="page.nav" :request-url="page.requestUrl" />
   <main>
-    <HeroSection :home="page.home" />
-    <IntroSection
-      :text="page.home.intro"
-      :cta-label="page.home.ctaLabel"
+    <HeroSection
+      :home="page.home"
       :request-url="page.requestUrl"
       :blocks="page.blocks"
+      :contact="page.contact"
     />
     <BlockList :blocks="page.blocks" />
   </main>
