@@ -1,6 +1,7 @@
 :root {
   --c-ink: #2d3a4d;
   --c-teal: #41aec4;
+  --c-teal-dark: #217a8d; /* texte turquoise lisible sur fond pâle */
   --c-lime: #b0c80a;
   --c-sky: #d9f0f6;
   --c-sage: #ebf0cb;

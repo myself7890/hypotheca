@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: f3f4ef77-74f8-4dd4-bf02-9327070208f0 # Taux hypothécaires
+handle: rates
+maxAuthors: 1
+minAuthors: 1
+name: 'Taux hypothécaires'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  cc056163-0f50-4378-b261-75a3339b2cc5: # Line Dandurand
+    enabledByDefault: true
+    hasUrls: true
+    template: rates.twig
+    uriFormat: taux-hypothecaires
+type: single

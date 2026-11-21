@@ -1,0 +1,25 @@
+{# Blocs Matrix → JSON pour Vue. Usage : include('_blocks.twig', { field: entry.contentBlocks })|trim|json_decode #}
+{% set blocks = [] %}
+{% for b in field.with(['blockImage']).all() %}
+  {% set t = b.type.handle %}
+  {% if t == 'imageText' %}
+    {% set img = b.blockImage.one() %}
+    {% set blocks = blocks|merge([{
+      id: b.id, type: t, slug: b.blockTitle|kebab,
+      title: b.blockTitle, text: b.blockText,
+      position: b.imagePosition.value ?? 'left', tone: b.imageTone.value ?? 'auto',
+      image: img ? { url: img.getUrl({ width: 800 }), alt: b.blockTitle } : null,
+    }]) %}
+  {% elseif t == 'quote' %}
+    {% set blocks = blocks|merge([{ id: b.id, type: t, text: b.quoteText, author: b.quoteAuthor }]) %}
+  {% elseif t == 'stats' %}
+    {% set blocks = blocks|merge([{ id: b.id, type: t, title: b.blockTitle, items: b.statItems }]) %}
+  {% elseif t == 'steps' %}
+    {% set blocks = blocks|merge([{ id: b.id, type: t, title: b.blockTitle, items: b.stepItems }]) %}
+  {% elseif t == 'faq' %}
+    {% set blocks = blocks|merge([{ id: b.id, type: t, title: b.blockTitle, items: b.faqItems }]) %}
+  {% elseif t == 'cta' %}
+    {% set blocks = blocks|merge([{ id: b.id, type: t, title: b.blockTitle, text: b.blockText, label: b.buttonLabel, url: b.buttonUrl }]) %}
+  {% endif %}
+{% endfor %}
+{{ blocks|json_encode|raw }}

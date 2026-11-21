@@ -5,13 +5,14 @@ import AppButton from './AppButton.vue';
 defineProps({
   nav: { type: Array, required: true },
   requestUrl: { type: String, required: true },
+  overlay: Boolean, // true : en-tête transparent posé sur le hero (accueil)
 });
 
 const isCurrent = (href) => window.location.pathname === href;
 </script>
 
 <template>
-  <header class="header">
+  <header class="header" :class="{ overlay }">
     <div class="container bar">
       <LogoMark />
       <nav class="nav" aria-label="Navigation principale">
@@ -29,7 +30,8 @@ const isCurrent = (href) => window.location.pathname === href;
 </template>
 
 <style scoped>
-.header { position: absolute; inset: 0 0 auto 0; z-index: 10; }
+.header { position: relative; z-index: 10; background: #fff; }
+.header.overlay { position: absolute; inset: 0 0 auto 0; background: none; }
 .bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.25rem; }
 .nav { display: flex; align-items: center; gap: 1.75rem; }
 .link {

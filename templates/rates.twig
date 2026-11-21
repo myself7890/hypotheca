@@ -1,0 +1,33 @@
+{% extends '_layout.twig' %}
+
+{% set pageTitle = entry.title %}
+{% set homeEntry = craft.entries.section('home').one() %}
+{% set photo = homeEntry ? homeEntry.brokerPhoto.one() : null %}
+
+{# Lignes vides ignorées ; taux en nombres (null si la case est vide). #}
+{% set rates = [] %}
+{% for row in entry.rateItems ?? [] %}
+  {% if row.term|trim is not empty %}
+    {% set rates = rates|merge([{
+      term: row.term|trim,
+      rate: row.rate is numeric ? row.rate + 0 : null,
+      posted: row.postedRate is numeric ? row.postedRate + 0 : null,
+    }]) %}
+  {% endif %}
+{% endfor %}
+
+{% set page = {
+  name: 'rates',
+  rates: {
+    title: entry.title,
+    kicker: entry.kicker,
+    intro: entry.introText,
+    items: rates,
+    note: entry.ratesNote,
+    updatedAt: entry.dateUpdated|date('long'),
+    contactKicker: entry.contactKicker,
+    contactText: entry.contactText,
+    photo: photo ? { url: photo.getUrl({ width: 240, height: 240 }), alt: homeEntry.brokerName } : null,
+  },
+  blocks: include('_blocks.twig', { field: entry.contentBlocks })|trim|json_decode,
+} %}

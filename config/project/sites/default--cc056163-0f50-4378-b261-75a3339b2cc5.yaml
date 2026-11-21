@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
 language: fr-CA
-name: Hypotheca
+name: 'Line Dandurand'
 primary: true
 siteGroup: ad8c50ea-ed62-455e-95bd-0e98e0418ad7 # Hypotheca
 sortOrder: 1

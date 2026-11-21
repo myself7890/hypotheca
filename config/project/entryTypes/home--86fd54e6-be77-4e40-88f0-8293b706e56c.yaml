@@ -160,6 +160,23 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
+            fieldUid: 6861a524-d373-4c01-b218-7424fbbed0e4
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8abce16b-454e-4da5-9764-9f0f1fbe990c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
             fieldUid: 741c6aab-5fe5-4a29-ad1b-6ec729f9b6fb # Blocs de contenu
             handle: null
             instructions: null

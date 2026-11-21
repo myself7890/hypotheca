@@ -5,13 +5,14 @@ defineProps({
   contact: { type: Object, required: true },
   nav: { type: Array, required: true },
   requestUrl: { type: String, required: true },
+  flush: Boolean, // true : collé à la section précédente (sans marge)
 });
 
 const year = new Date().getFullYear();
 </script>
 
 <template>
-  <footer class="footer">
+  <footer class="footer" :class="{ flush }">
     <div class="container cols">
       <div class="brand"><LogoMark light /></div>
 
@@ -39,6 +40,7 @@ const year = new Date().getFullYear();
 <style scoped>
 .footer { background: var(--c-ink); color: #fff; padding-block: 3.5rem 2rem; margin-top: 3.5rem; font-size: 0.8125rem; }
 .cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; }
+.footer.flush { margin-top: 0; }
 .col h3 { font-size: 0.8125rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; }
 ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
 a { text-decoration: none; }

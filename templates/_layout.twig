@@ -1,3 +1,36 @@
+{# Données communes à toutes les pages (en-tête, pied de page) #}
+{% set ratesEntry = craft.entries.section('rates').one() %}
+{% set nav = [{ label: 'Accueil', href: '/' }] %}
+{# Page des taux facultative : dans le menu seulement si elle existe et est activée. #}
+{% if ratesEntry %}
+  {% set nav = nav|merge([{ label: ratesEntry.title, href: '/' ~ ratesEntry.uri }]) %}
+{% endif %}
+
+{# Hero (bannière de l'accueil) : présent sur toutes les pages #}
+{% set homeEntry = craft.entries.section('home').one() %}
+{% set homePhoto = homeEntry ? homeEntry.brokerPhoto.one() : null %}
+{% set homeBg = homeEntry ? homeEntry.heroBackground.one() : null %}
+
+{% set page = {
+  site: { name: siteName, url: siteUrl },
+  home: homeEntry ? {
+    brokerName: homeEntry.brokerName,
+    title: homeEntry.heroTitle,
+    bio: homeEntry.brokerBio,
+    licenseNotice: homeEntry.licenseNotice,
+    intro: homeEntry.introText,
+    ctaLabel: homeEntry.ctaLabel,
+    photo: homePhoto ? { url: homePhoto.getUrl({ width: 1400 }), alt: homeEntry.brokerName } : null,
+    background: homeBg ? homeBg.getUrl({ width: 2400 }) : null,
+  } : null,
+  contact: {
+    name: contact.contactName,
+    phone: contact.phone,
+    email: contact.email,
+  },
+  nav: nav,
+  requestUrl: '/demande-en-ligne',
+}|merge(page ?? {}) %}
 <!DOCTYPE html>
 <html lang="{{ currentSite.language }}">
 <head>

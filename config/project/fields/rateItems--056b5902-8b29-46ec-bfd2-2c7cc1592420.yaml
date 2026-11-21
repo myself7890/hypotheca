@@ -1,0 +1,56 @@
+columnSuffix: null
+handle: rateItems
+instructions: 'Un terme par ligne. Les taux sont en pourcentage (ex. : 4,79). Laissez « Taux affiché » vide pour masquer cette colonne.'
+name: 'Grille des taux'
+searchable: false
+settings:
+  addRowLabel: 'Ajouter un terme'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Terme
+            -
+              - handle
+              - term
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Taux Hypotheca (%)'
+            -
+              - handle
+              - rate
+            -
+              - type
+              - number
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Taux affiché (%)'
+            -
+              - handle
+              - postedRate
+            -
+              - type
+              - number
+  maxRows: null
+  minRows: null
+  staticRows: false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
+warning: null

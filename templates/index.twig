@@ -1,32 +1,7 @@
 {% extends '_layout.twig' %}
 
-{% set home = entry %}
-{% set photo = home.brokerPhoto.one() %}
-
-{# Blocs Matrix → tableau pour Vue #}
-{% set blocks = [] %}
-{% for b in home.contentBlocks.with(['blockImage']).all() %}
-  {% set t = b.type.handle %}
-  {% if t == 'imageText' %}
-    {% set img = b.blockImage.one() %}
-    {% set blocks = blocks|merge([{
-      id: b.id, type: t, slug: b.blockTitle|kebab,
-      title: b.blockTitle, text: b.blockText,
-      position: b.imagePosition.value ?? 'left', tone: b.imageTone.value ?? 'auto',
-      image: img ? { url: img.getUrl({ width: 800 }), alt: b.blockTitle } : null,
-    }]) %}
-  {% elseif t == 'quote' %}
-    {% set blocks = blocks|merge([{ id: b.id, type: t, text: b.quoteText, author: b.quoteAuthor }]) %}
-  {% elseif t == 'stats' %}
-    {% set blocks = blocks|merge([{ id: b.id, type: t, title: b.blockTitle, items: b.statItems }]) %}
-  {% elseif t == 'steps' %}
-    {% set blocks = blocks|merge([{ id: b.id, type: t, title: b.blockTitle, items: b.stepItems }]) %}
-  {% elseif t == 'faq' %}
-    {% set blocks = blocks|merge([{ id: b.id, type: t, title: b.blockTitle, items: b.faqItems }]) %}
-  {% elseif t == 'cta' %}
-    {% set blocks = blocks|merge([{ id: b.id, type: t, title: b.blockTitle, text: b.blockText, label: b.buttonLabel, url: b.buttonUrl }]) %}
-  {% endif %}
-{% endfor %}
+{# Les données du hero (page.home) sont fournies par _layout.twig. #}
+{% set blocks = include('_blocks.twig', { field: entry.contentBlocks })|trim|json_decode %}
 
 {% if craft.app.config.general.devMode and craft.app.request.getParam('demo') %}
   {% set blocks = blocks|merge(include('_demo-blocks.twig')|trim|json_decode) %}
@@ -34,25 +9,5 @@
 
 {% set page = {
   name: 'home',
-  site: { name: siteName, url: siteUrl },
-  home: {
-    brokerName: home.brokerName,
-    title: home.heroTitle,
-    bio: home.brokerBio,
-    licenseNotice: home.licenseNotice,
-    intro: home.introText,
-    ctaLabel: home.ctaLabel,
-    photo: photo ? { url: photo.getUrl({ width: 1400 }), alt: home.brokerName } : null,
-  },
   blocks: blocks,
-  contact: {
-    name: contact.contactName,
-    phone: contact.phone,
-    email: contact.email,
-  },
-  nav: [
-    { label: 'Accueil', href: '/' },
-    { label: 'Taux hypothécaire', href: '/taux-hypothecaire' },
-  ],
-  requestUrl: '/demande-en-ligne',
 } %}

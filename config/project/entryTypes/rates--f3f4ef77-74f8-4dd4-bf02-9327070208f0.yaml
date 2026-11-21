@@ -1,0 +1,173 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  e95cbbb9-c774-4f96-91db-95b761f0faa8:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f57cf51d-6b42-495e-b556-8ac8b9f66584
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b5ccfe95-a051-4f96-85c7-c593d74063cd # Surtitre
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7b29362c-df26-415c-b83c-006f4ca52f8d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: edd2f856-b237-474e-8cdb-5059cf0869e4 # Texte d’introduction
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4d1b3ff-6149-45d5-b93a-cd2f92b46687
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 056b5902-8b29-46ec-bfd2-2c7cc1592420 # Grille des taux
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49286a69-62f8-415f-bc06-c0f799c2c2e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 39bdcc0a-6629-4884-ab6c-ae349bc1d774 # Note sous la grille
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f44079cc-8e34-4421-8917-c6e31603cb1a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 741c6aab-5fe5-4a29-ad1b-6ec729f9b6fb # Blocs de contenu
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c856d82-b62c-42ec-b0d5-bf17e76b3cd1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0b3dd5f1-61ab-4aad-8115-9cd72ef67969 # Encadré contact : accroche
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8cbb7c1e-b710-4664-8f7e-ef2fdbf3b662
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 171faebc-7801-40c1-938d-0934fe9884f2 # Encadré contact : texte
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d407c043-609d-4016-80d1-8e1e16cf40b9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: 10f6ad8c-2443-4caf-88ae-90f2cd37edc9
+        userCondition: null
+    thumbFieldKey: null
+handle: rates
+hasTitleField: true
+icon: null
+name: 'Taux hypothécaires'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

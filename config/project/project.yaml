@@ -1,4 +1,4 @@
-dateModified: 1794840183
+dateModified: 1795281545
 email:
   fromEmail: admin@hypotheca.ddev.site
   fromName: Hypotheca
@@ -13,6 +13,7 @@ fs:
     url: '@web/uploads'
 meta:
   __names__:
+    0b3dd5f1-61ab-4aad-8115-9cd72ef67969: 'Encadré contact : accroche' # Encadré contact : accroche
     0ec5e2c0-bca9-40b3-8f1b-6a0a575cd0bb: Titre # Titre
     2ae091ad-67ef-4487-ba04-d2f117fa81cd: Téléphone # Téléphone
     3f521a87-2d8f-4d31-8e7b-4f13ecc387a4: Texte # Texte
@@ -21,10 +22,13 @@ meta:
     8f2f18f7-e60f-4af3-99e0-0ab061612d19: Image # Image
     9a0f4112-d0dd-4812-8ac1-2eccf65f7533: 'Couleur de fond de l’image' # Couleur de fond de l’image
     21c2d62e-a26a-4e6b-af20-bf878240a929: Chiffres # Chiffres
+    39bdcc0a-6629-4884-ab6c-ae349bc1d774: 'Note sous la grille' # Note sous la grille
+    056b5902-8b29-46ec-bfd2-2c7cc1592420: 'Grille des taux' # Grille des taux
     73a48f37-9666-4792-87f6-1c3f47e8d82d: 'Nom de la courtière' # Nom de la courtière
     86fd54e6-be77-4e40-88f0-8293b706e56c: Accueil # Accueil
     98aa0482-b8ee-4980-9e92-19c80f20f67f: 'Titre principal' # Titre principal
     99fc5c55-2830-446a-9213-3796a27d2f56: Étapes # Étapes
+    171faebc-7801-40c1-938d-0934fe9884f2: 'Encadré contact : texte' # Encadré contact : texte
     329b2dfa-d213-4f4e-ae87-0c8376c81cf4: 'Libellé du bouton' # Libellé du bouton
     662f841a-1ea8-438b-b000-9edfc1da0d3d: Questions # Questions
     712ba338-4b81-42e7-9077-99fe66cd022d: 'Mention de permis' # Mention de permis
@@ -36,16 +40,19 @@ meta:
     ab9a2f29-79cd-4dd2-a081-bcf72fef4039: Étapes # Étapes
     ac18bf3d-7f26-47b1-b4db-df6c09f6f8a2: 'Libellé du bouton' # Libellé du bouton
     ad8c50ea-ed62-455e-95bd-0e98e0418ad7: Hypotheca # Hypotheca
+    b5ccfe95-a051-4f96-85c7-c593d74063cd: Surtitre # Surtitre
     b1854cb0-92a8-4b90-89a5-7fc376751f74: Images # Images
     b48759a1-3115-4efe-a44a-61f80744e915: 'Position de l’image' # Position de l’image
     bb98cc27-8386-4a8e-981a-8facfffe9338: 'Appel à l’action' # Appel à l’action
-    cc056163-0f50-4378-b261-75a3339b2cc5: Hypotheca # Hypotheca
+    cc056163-0f50-4378-b261-75a3339b2cc5: 'Line Dandurand' # Line Dandurand
     cfe0c80a-e4ee-4bc7-8ecb-21693ec7fe95: 'Photo de la courtière' # Photo de la courtière
+    d3d57abb-116b-4733-8194-b9f4609906f2: 'Taux hypothécaires' # Taux hypothécaires
     d7d16ad9-3c66-48bc-9858-8c15b7652366: 'Nom de la courtière' # Nom de la courtière
     d7f140bb-46b4-4449-8b64-b6ebb902dab9: Citation # Citation
     d327a574-de5f-4416-9628-8429d04c7b39: Accueil # Accueil
     e292fb2c-1af6-4a8f-8ec9-99d6798ab887: 'Image + texte' # Image + texte
     edd2f856-b237-474e-8cdb-5059cf0869e4: 'Texte d’introduction' # Texte d’introduction
+    f3f4ef77-74f8-4dd4-bf02-9327070208f0: 'Taux hypothécaires' # Taux hypothécaires
     f34f6c98-2cd0-4993-a950-e99ec109c061: 'Chiffres clés' # Chiffres clés
     f4527332-1980-4007-b166-dff2e09c47b9: 'Foire aux questions' # Foire aux questions
 plugins:
