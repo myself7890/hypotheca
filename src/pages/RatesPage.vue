@@ -1,10 +1,11 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import RatesTable from '@/components/rates/RatesTable.vue';
 import MortgageCalculator from '@/components/rates/MortgageCalculator.vue';
 import ContactBand from '@/components/rates/ContactBand.vue';
 import BlockList from '@/components/BlockList.vue';
 import HeroBanner from '@/components/HeroBanner.vue';
+import { highlightTerm } from '@/lib/highlight.js';
 
 const props = defineProps({
   rates: { type: Object, required: true },
@@ -21,29 +22,37 @@ const defaultRate = computed(() => {
   return (fiveFixed ?? items[0])?.rate ?? 5;
 });
 
-const calculator = ref(null);
-const useRate = (row) => calculator.value?.setRate(row.rate, row.term);
+const definitions = computed(() => (props.rates.definitions ?? []).map((d) => highlightTerm(d.text, d.term)));
+const asides = computed(() => (props.rates.asides ?? []).map((d) => highlightTerm(d.text, d.term)));
 </script>
 
 <template>
   <!-- Même bannière que l'accueil, en tête de chaque page -->
   <HeroBanner v-if="home" :home="home" :contact="contact" title-tag="p" />
 
-  <section class="page-head container">
-    <p v-if="rates.kicker" class="kicker">{{ rates.kicker }}</p>
-    <h1>{{ rates.title }}</h1>
-    <p v-if="rates.intro" class="intro">{{ rates.intro }}</p>
-  </section>
+  <!-- Disposition de hypotheca.ca : titre + calculateur, puis grille + encadrés -->
+  <div class="container layout">
+    <header class="head">
+      <p v-if="rates.kicker" class="kicker">{{ rates.kicker }}</p>
+      <h1>{{ rates.title }}</h1>
+      <p v-if="rates.intro" class="intro">{{ rates.intro }}</p>
+    </header>
 
-  <RatesTable
-    v-if="rates.items.length"
-    :items="rates.items"
-    :note="rates.note"
-    :updated-at="rates.updatedAt"
-    @use-rate="useRate"
-  />
+    <div class="main">
+      <RatesTable v-if="rates.items.length" :items="rates.items" :note="rates.note" :updated-at="rates.updatedAt" />
+      <div v-if="definitions.length" class="definitions">
+        <p v-for="(html, i) in definitions" :key="i" v-html="html"></p>
+      </div>
+    </div>
 
-  <MortgageCalculator ref="calculator" :default-rate="defaultRate" :request-url="requestUrl" />
+    <!-- Colonne de droite : calculateur puis encadrés, sur toute la hauteur du contenu -->
+    <div class="side">
+      <MortgageCalculator class="calc" :default-rate="defaultRate" />
+      <aside v-if="asides.length" class="notes">
+        <p v-for="(html, i) in asides" :key="i" class="note" v-html="html"></p>
+      </aside>
+    </div>
+  </div>
 
   <BlockList :blocks="blocks" />
 
@@ -57,9 +66,23 @@ const useRate = (row) => calculator.value?.setRate(row.rate, row.term);
 </template>
 
 <style scoped>
-.page-head { padding-top: clamp(2.5rem, 6vw, 4rem); }
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 19rem);
+  grid-template-rows: auto 1fr; /* la colonne de droite n'étire pas la ligne du titre */
+  grid-template-areas:
+    'head side'
+    'main side';
+  gap: 2rem clamp(1.5rem, 4vw, 3rem);
+  padding-top: clamp(2.5rem, 6vw, 3.5rem);
+}
+.head { grid-area: head; }
+.main { grid-area: main; }
+.side { grid-area: side; display: grid; gap: 2rem; align-content: start; }
+.notes { display: grid; gap: 1.75rem; }
+
 /* Filet turquoise + lime, comme l'introduction de l'accueil */
-.page-head::before {
+.head::before {
   content: '';
   display: block;
   width: 3.5rem;
@@ -77,4 +100,41 @@ const useRate = (row) => calculator.value?.setRate(row.rate, row.term);
 }
 h1 { font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -0.02em; }
 .intro { max-width: 40rem; margin-top: 1.1rem; font-size: 1.0625rem; }
+
+.definitions { display: grid; gap: 1.1rem; margin-top: 2rem; font-size: 0.9375rem; }
+.definitions :deep(strong), .note :deep(strong) { color: var(--c-ink); }
+
+/* Encadrés à coin replié */
+.note {
+  position: relative;
+  padding: 1.35rem 1.35rem 1.25rem;
+  background: #eaf6f9;
+  border-radius: 0.3rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+.note::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 1.5rem 1.5rem 0;
+  border-color: #fff #fff var(--c-teal) var(--c-teal);
+  border-bottom-left-radius: 0.2rem;
+  opacity: 0.75;
+}
+
+@media (max-width: 820px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    grid-template-areas: 'head' 'calc' 'main' 'notes';
+  }
+  /* Sur mobile : titre, calculateur, grille, puis encadrés */
+  .side { display: contents; }
+  .calc { grid-area: calc; max-width: 24rem; }
+  .notes { grid-area: notes; }
+}
 </style>

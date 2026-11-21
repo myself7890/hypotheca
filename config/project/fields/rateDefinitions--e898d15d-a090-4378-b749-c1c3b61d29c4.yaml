@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: rateDefinitions
+instructions: 'Le terme est mis en gras là où il apparaît dans le texte (sinon, il est ajouté au début).'
+name: 'Définitions sous la grille'
+searchable: false
+settings:
+  addRowLabel: 'Ajouter une définition'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Terme
+            -
+              - handle
+              - term
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Texte
+            -
+              - handle
+              - text
+            -
+              - type
+              - multiline
+  maxRows: null
+  minRows: null
+  staticRows: false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
+warning: null

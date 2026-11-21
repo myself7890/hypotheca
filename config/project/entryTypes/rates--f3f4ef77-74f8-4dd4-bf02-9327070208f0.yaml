@@ -109,6 +109,40 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
+            fieldUid: e898d15d-a090-4378-b749-c1c3b61d29c4 # Définitions sous la grille
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67ea4c78-25d3-455a-9441-d87ae88b1dd1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7e2e30a6-b081-417d-b29a-06b5cf519c90 # Encadrés à droite de la grille
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07f6a2d5-4501-42d8-ab57-cd2d27a16b3f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
             fieldUid: 741c6aab-5fe5-4a29-ad1b-6ec729f9b6fb # Blocs de contenu
             handle: null
             instructions: null

@@ -16,6 +16,10 @@
   {% endif %}
 {% endfor %}
 
+{# Définitions / encadrés : lignes sans texte ignorées. #}
+{% set defs = (entry.rateDefinitions ?? [])|filter(r => r.text|trim is not empty)|map(r => { term: r.term|trim, text: r.text|trim }) %}
+{% set asides = (entry.rateAsides ?? [])|filter(r => r.text|trim is not empty)|map(r => { term: r.term|trim, text: r.text|trim }) %}
+
 {% set page = {
   name: 'rates',
   rates: {
@@ -24,6 +28,8 @@
     intro: entry.introText,
     items: rates,
     note: entry.ratesNote,
+    definitions: defs|values,
+    asides: asides|values,
     updatedAt: entry.dateUpdated|date('long'),
     contactKicker: entry.contactKicker,
     contactText: entry.contactText,

@@ -1,4 +1,4 @@
-dateModified: 1795281545
+dateModified: 1795284066
 email:
   fromEmail: admin@hypotheca.ddev.site
   fromName: Hypotheca
@@ -19,6 +19,7 @@ meta:
     3f521a87-2d8f-4d31-8e7b-4f13ecc387a4: Texte # Texte
     4f02a578-8baa-46c6-8bcf-85f90753a03c: Présentation # Présentation
     5e794dec-1a93-48eb-b2a4-49eaef9045b1: Coordonnées # Coordonnées
+    7e2e30a6-b081-417d-b29a-06b5cf519c90: 'Encadrés à droite de la grille' # Encadrés à droite de la grille
     8f2f18f7-e60f-4af3-99e0-0ab061612d19: Image # Image
     9a0f4112-d0dd-4812-8ac1-2eccf65f7533: 'Couleur de fond de l’image' # Couleur de fond de l’image
     21c2d62e-a26a-4e6b-af20-bf878240a929: Chiffres # Chiffres
@@ -51,6 +52,7 @@ meta:
     d7f140bb-46b4-4449-8b64-b6ebb902dab9: Citation # Citation
     d327a574-de5f-4416-9628-8429d04c7b39: Accueil # Accueil
     e292fb2c-1af6-4a8f-8ec9-99d6798ab887: 'Image + texte' # Image + texte
+    e898d15d-a090-4378-b749-c1c3b61d29c4: 'Définitions sous la grille' # Définitions sous la grille
     edd2f856-b237-474e-8cdb-5059cf0869e4: 'Texte d’introduction' # Texte d’introduction
     f3f4ef77-74f8-4dd4-bf02-9327070208f0: 'Taux hypothécaires' # Taux hypothécaires
     f34f6c98-2cd0-4993-a950-e99ec109c061: 'Chiffres clés' # Chiffres clés
