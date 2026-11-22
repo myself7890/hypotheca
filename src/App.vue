@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection.vue';
 import BlockList from '@/components/BlockList.vue';
 import SiteFooter from '@/components/SiteFooter.vue';
 import RatesPage from '@/pages/RatesPage.vue';
+import RequestPage from '@/pages/RequestPage.vue';
 
 defineProps({ page: { type: Object, required: true } });
 </script>
@@ -18,6 +19,12 @@ defineProps({ page: { type: Object, required: true } });
       :blocks="page.blocks"
       :contact="page.contact"
       :request-url="page.requestUrl"
+    />
+    <RequestPage
+      v-else-if="page.name === 'request'"
+      :request="page.request"
+      :home="page.home"
+      :contact="page.contact"
     />
     <template v-else>
       <HeroSection

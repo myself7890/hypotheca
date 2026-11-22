@@ -1,0 +1,15 @@
+{% extends '_layout.twig' %}
+
+{% set pageTitle = entry.title %}
+
+{% set page = {
+  name: 'request',
+  request: {
+    title: entry.title,
+    kicker: entry.kicker,
+    intro: entry.introText,
+    success: entry.requestSuccess,
+    action: actionUrl('hypotheca/request/submit'),
+    csrf: { name: craft.app.request.csrfParam, value: craft.app.request.csrfToken },
+  },
+} %}

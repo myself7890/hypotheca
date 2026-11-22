@@ -1,4 +1,4 @@
-dateModified: 1795284066
+dateModified: 1795284450
 email:
   fromEmail: admin@hypotheca.ddev.site
   fromName: Hypotheca
@@ -14,7 +14,9 @@ fs:
 meta:
   __names__:
     0b3dd5f1-61ab-4aad-8115-9cd72ef67969: 'Encadré contact : accroche' # Encadré contact : accroche
+    00ea98de-47b7-4347-8b92-0b251541172c: 'Demande en ligne' # Demande en ligne
     0ec5e2c0-bca9-40b3-8f1b-6a0a575cd0bb: Titre # Titre
+    1eeb369a-e6f8-4acc-91d4-df9abea5f1d5: 'Message de confirmation' # Message de confirmation
     2ae091ad-67ef-4487-ba04-d2f117fa81cd: Téléphone # Téléphone
     3f521a87-2d8f-4d31-8e7b-4f13ecc387a4: Texte # Texte
     4f02a578-8baa-46c6-8bcf-85f90753a03c: Présentation # Présentation
@@ -53,6 +55,7 @@ meta:
     d327a574-de5f-4416-9628-8429d04c7b39: Accueil # Accueil
     e292fb2c-1af6-4a8f-8ec9-99d6798ab887: 'Image + texte' # Image + texte
     e898d15d-a090-4378-b749-c1c3b61d29c4: 'Définitions sous la grille' # Définitions sous la grille
+    ecc39ba7-236f-46cd-b6ed-a1d46368e0bd: 'Demande en ligne' # Demande en ligne
     edd2f856-b237-474e-8cdb-5059cf0869e4: 'Texte d’introduction' # Texte d’introduction
     f3f4ef77-74f8-4dd4-bf02-9327070208f0: 'Taux hypothécaires' # Taux hypothécaires
     f34f6c98-2cd0-4993-a950-e99ec109c061: 'Chiffres clés' # Chiffres clés

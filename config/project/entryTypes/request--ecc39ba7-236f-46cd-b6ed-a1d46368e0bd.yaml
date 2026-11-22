@@ -1,0 +1,105 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  7ed0721f-265d-4ccb-85de-2d9933da3255:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3b255ec3-f35b-49fb-b3b2-9b3f0123cbd1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b5ccfe95-a051-4f96-85c7-c593d74063cd # Surtitre
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16cb373d-78c3-4ba4-a6e4-63bb31dc4b55
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: edd2f856-b237-474e-8cdb-5059cf0869e4 # Texte d’introduction
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75614655-eb7c-4551-81f0-0c5cf18270a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 1eeb369a-e6f8-4acc-91d4-df9abea5f1d5 # Message de confirmation
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 709c4bb8-f0aa-4b9f-9e3d-9610fc92a9ac
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenu
+        uid: aadb7b30-1bf6-4bb2-928f-9ca6351339ce
+        userCondition: null
+    thumbFieldKey: null
+handle: request
+hasTitleField: true
+icon: null
+name: 'Demande en ligne'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

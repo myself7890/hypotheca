@@ -23,5 +23,10 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
   }
 }

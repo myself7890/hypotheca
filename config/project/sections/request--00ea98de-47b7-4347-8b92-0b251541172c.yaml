@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: ecc39ba7-236f-46cd-b6ed-a1d46368e0bd # Demande en ligne
+handle: request
+maxAuthors: 1
+minAuthors: 1
+name: 'Demande en ligne'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  cc056163-0f50-4378-b261-75a3339b2cc5: # Line Dandurand
+    enabledByDefault: true
+    hasUrls: true
+    template: request.twig
+    uriFormat: demande-en-ligne
+type: single
