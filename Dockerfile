@@ -40,6 +40,8 @@ RUN composer dump-autoload --no-dev --optimize --no-interaction \
 
 # Railway fournit $PORT ; 8080 par défaut en local
 ENV PORT=8080
+# Logs de Craft sur stdout/stderr, pour qu'ils apparaissent dans Railway
+ENV CRAFT_STREAM_LOG=true
 EXPOSE 8080
 
 CMD ["frankenphp", "run", "--config", "/etc/caddy/Caddyfile"]

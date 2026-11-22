@@ -37,6 +37,8 @@ return [
                 // Transport::fromDsn() charge tous les ponts installés (Resend
                 // compris), contrairement à la liste fixe du mailer de Yii.
                 $config['transport'] = \Symfony\Component\Mailer\Transport::fromDsn($dsn);
+            } elseif (App::env('CRAFT_ENVIRONMENT') === 'production') {
+                Craft::warning('MAILER_DSN n’est pas défini : aucun courriel ne pourra partir (pas de sendmail dans le conteneur).', 'mailer');
             }
             if ($fromEmail = App::env('MAIL_FROM_EMAIL')) {
                 $config['from'] = [$fromEmail => App::env('MAIL_FROM_NAME') ?: 'Hypotheca'];
