@@ -4,6 +4,7 @@
   "require": {
     "craftcms/cms": "^5.9.0",
     "nystudio107/craft-vite": "^5.0",
+    "symfony/resend-mailer": "^7.4",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

@@ -3,7 +3,6 @@
 namespace modules\hypotheca\controllers;
 
 use Craft;
-use craft\helpers\App;
 use craft\web\Controller;
 use modules\hypotheca\models\RequestForm;
 use yii\web\Response;
@@ -38,9 +37,10 @@ class RequestController extends Controller
         }
 
         $contact = Craft::$app->getGlobals()->getSetByHandle('contact');
-        $to = $contact?->email ?: App::mailSettings()->fromEmail;
+        $mailer = Craft::$app->getMailer();
+        $to = $contact?->email ?: array_key_first((array) $mailer->from);
 
-        $message = Craft::$app->getMailer()->compose()
+        $message = $mailer->compose()
             ->setTo($to)
             ->setSubject('Demande en ligne : ' . $form->fullName())
             ->setTextBody($form->toText());

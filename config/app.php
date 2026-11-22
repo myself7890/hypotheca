@@ -27,4 +27,21 @@ return [
     'modules' => [
         'hypotheca' => \modules\hypotheca\Module::class,
     ],
+    'components' => [
+        // En production (Railway), l'envoi passe par MAILER_DSN, par exemple
+        // resend+api://CLÉ@default ; Railway bloque le SMTP sortant hors plan Pro.
+        // Sans MAILER_DSN (DDEV), on garde les réglages de courriel du panneau.
+        'mailer' => function() {
+            $config = App::mailerConfig();
+            if ($dsn = App::env('MAILER_DSN')) {
+                // Transport::fromDsn() charge tous les ponts installés (Resend
+                // compris), contrairement à la liste fixe du mailer de Yii.
+                $config['transport'] = \Symfony\Component\Mailer\Transport::fromDsn($dsn);
+            }
+            if ($fromEmail = App::env('MAIL_FROM_EMAIL')) {
+                $config['from'] = [$fromEmail => App::env('MAIL_FROM_NAME') ?: 'Hypotheca'];
+            }
+            return Craft::createObject($config);
+        },
+    ],
 ];
