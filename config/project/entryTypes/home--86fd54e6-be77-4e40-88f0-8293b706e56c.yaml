@@ -5,11 +5,9 @@ fieldLayouts:
   82ad3107-81af-47a4-82bf-3ad029dbd10f:
     cardThumbAlignment: end
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            autocapitalize: true
+          - autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
@@ -36,8 +34,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
+          - dateAdded: null
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -53,8 +50,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
+          - dateAdded: null
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -70,42 +66,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 4f02a578-8baa-46c6-8bcf-85f90753a03c # Présentation
-            handle: null
-            instructions: null
-            label: null
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 34abf8c1-d7b3-4d3e-8db9-3c61772cfb93
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 712ba338-4b81-42e7-9077-99fe66cd022d # Mention de permis
-            handle: null
-            instructions: null
-            label: null
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 69ac900e-8adc-4124-816f-fdac9156f093
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: null
+          - dateAdded: null
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -121,8 +82,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
+          - dateAdded: null
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -138,8 +98,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
+          - dateAdded: null
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -155,8 +114,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
+          - dateAdded: null
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -172,8 +130,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
+          - dateAdded: null
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -204,4 +161,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-uiLabelFormat: '{title}'
+uiLabelFormat: "{title}"
